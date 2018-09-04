@@ -1,0 +1,21 @@
+{
+  "name": "microsoft_teams_bot_development",
+  "version": "1.0.0",
+  "description": "Training project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aliaksei Bychyk",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.15.0",
+    "restify": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/restify": "^7.2.4",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}
