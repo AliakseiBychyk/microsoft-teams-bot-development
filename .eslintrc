@@ -12,6 +12,7 @@
   "rules": {
     "max-len": [2, 120, 8],
     "no-console": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "new-cap": 0
   }
 }
