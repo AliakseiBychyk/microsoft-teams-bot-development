@@ -1,19 +1,14 @@
 const builder = require('botbuilder');
+const builderTeams = require('botbuilder-teams');
 const restify = require('restify');
 const githubClient = require('./githubClient');
 
-const connector = new builder.ChatConnector();
-
-/**
- * simple example of bot
- */
-// const bot = new builder.UniversalBot(
-//   connector, [
-//     (session) => {
-//       session.send('Hello there!');
-//     },
-//   ]
-// ).set('storage', new builder.MemoryBotStorage());
+const connector = new builderTeams.TeamsChatConnector(
+  {
+    appId: '',
+    appPassword: '',
+  }
+);
 
 const inMemoryStorage = new builder.MemoryBotStorage;
 
