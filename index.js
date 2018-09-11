@@ -7,6 +7,9 @@ const config = require('./secret/config.json');
 const appId = process.env.appId || config.appId;
 const appPassword = process.env.appPassword || config.appPassword;
 
+console.log(appId);
+console.log(appPassword);
+
 const connector = new builderTeams.TeamsChatConnector(
   {
     appId,
