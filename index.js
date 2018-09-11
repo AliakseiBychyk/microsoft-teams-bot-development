@@ -2,11 +2,15 @@ const builder = require('botbuilder');
 const builderTeams = require('botbuilder-teams');
 const restify = require('restify');
 const githubClient = require('./githubClient');
+const config = require('./secret/config.json');
+
+const appId = process.env.appId || config.appId;
+const appPassword = process.env.appPassword || config.appPassword;
 
 const connector = new builderTeams.TeamsChatConnector(
   {
-    appId: '',
-    appPassword: '',
+    appId,
+    appPassword,
   }
 );
 
