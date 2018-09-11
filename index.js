@@ -2,10 +2,7 @@ const builder = require('botbuilder');
 const builderTeams = require('botbuilder-teams');
 const restify = require('restify');
 const githubClient = require('./githubClient');
-
-const APP_ID = process.env.APP_ID;
-const APP_PASSWORD = process.env.APP_PASSWORD;
-const PORT = process.env.PORT || 3978;
+const { APP_ID, APP_PASSWORD, PORT } = require('./config');
 
 const connector = new builderTeams.TeamsChatConnector(
   {

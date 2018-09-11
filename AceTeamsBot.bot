@@ -1,0 +1,16 @@
+{
+    "name": "AceTeamsBot",
+    "description": "",
+    "version": "2.0",
+    "secretKey": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "https://ace-teams-bot.herokuapp.com/api/messages",
+            "id": "a06672d0-b5ca-11e8-b113-77e521e7e466",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "https://ace-teams-bot.herokuapp.com/api/messages"
+        }
+    ]
+}
