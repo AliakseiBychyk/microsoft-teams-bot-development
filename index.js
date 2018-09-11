@@ -7,9 +7,6 @@ const APP_ID = process.env.APP_ID;
 const APP_PASSWORD = process.env.APP_PASSWORD;
 const PORT = process.env.PORT || 3978;
 
-console.log(APP_ID);
-console.log(APP_PASSWORD);
-
 const connector = new builderTeams.TeamsChatConnector(
   {
     APP_ID,
@@ -80,4 +77,6 @@ bot.dialog('/', dialog);
 const server = restify.createServer();
 
 server.post('/api/messages', connector.listen());
-server.listen(PORT);
+server.listen(PORT, () => {
+  console.log(`server listening on port ${PORT}`);
+});
