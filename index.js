@@ -5,6 +5,7 @@ const githubClient = require('./githubClient');
 
 const APP_ID = process.env.APP_ID;
 const APP_PASSWORD = process.env.APP_PASSWORD;
+const PORT = process.env.PORT || 3978;
 
 console.log(APP_ID);
 console.log(APP_PASSWORD);
@@ -79,4 +80,4 @@ bot.dialog('/', dialog);
 const server = restify.createServer();
 
 server.post('/api/messages', connector.listen());
-server.listen(3978);
+server.listen(PORT);
