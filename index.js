@@ -17,10 +17,10 @@ const connector = new builder.ChatConnector();
 
 const inMemoryStorage = new builder.MemoryBotStorage;
 
+const dialog = new builder.IntentDialog();
+
 const bot = new builder.UniversalBot(connector, dialog)
   .set('storage', inMemoryStorage);
-
-const dialog = new builder.IntentDialog();
 
 dialog.matches(/^search/i, [
   function(session, args, next) {
