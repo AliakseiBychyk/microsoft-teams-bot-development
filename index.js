@@ -1,6 +1,7 @@
 const builder = require('botbuilder');
 const builderTeams = require('botbuilder-teams');
 const restify = require('restify');
+
 const githubClient = require('./githubClient');
 const { APP_ID, APP_PASSWORD, PORT } = require('./config');
 
@@ -19,11 +20,9 @@ const dialog = new builder.IntentDialog();
 dialog.matches(/^search/i, [
   function(session, args, next) {
     if (session.message.text.toLowerCase() === 'search') {
-      console.log('asked - search');
       builder.Prompts.text(session, 'Who are you looking for?');
     } else {
       const query = session.message.text.substring(7);
-      console.log('query: ', query);
       next({response: query});
     }
   },
