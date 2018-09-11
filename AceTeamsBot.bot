@@ -7,9 +7,9 @@
         {
             "type": "endpoint",
             "name": "https://ace-teams-bot.herokuapp.com/api/messages",
-            "id": "a06672d0-b5ca-11e8-b113-77e521e7e466",
-            "appId": "",
-            "appPassword": "",
+            "id": "0decd510-b5d0-11e8-b1ee-478247e8919a",
+            "appId": "f8bd0854-5aa4-4a9f-8b16-0b3e8d250f00",
+            "appPassword": "inwvaUUE808;vzLJYI64:#%",
             "endpoint": "https://ace-teams-bot.herokuapp.com/api/messages"
         }
     ]
